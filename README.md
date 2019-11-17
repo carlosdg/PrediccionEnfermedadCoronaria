@@ -1,19 +1,39 @@
 # Predicción de la presencia de una enfermedad cardiovascular usando Machine Learning
 
+<!-- Put image here -->
+
+## Introducción
+
+<!-- Las enfermedades cardiovasculares son la principal causa de muerte en el mundo según la OMS... -->
+
 ## ¿Qué es una enfermedad cardiovascular?
 
 El corazón es el órgano encargado de bombear la sangre al resto del cuerpo. Recibe sangre con poco oxígeno que manda a los pulmones para que se oxigene y la sangre que recibe de los pulmones la bombea al resto del cuerpo. El corazón también es un músculo por lo que necesita oxígeno para continuar realizando su función, el cual llega por las arterias coronarias.
 
-Cuando se da una enfermedad cardiovascular suele hablarse de enfermedad de las arterias coronarias, es decir, dificultad del flujo sanguíneo debido a la acumulación de sustancias sobre las paredes de estar arterias.
+Cuando se da una enfermedad cardiovascular suele hablarse de enfermedad de las arterias coronarias, es decir, dificultad del flujo sanguíneo en estas arterias, normalmente debido a la acumulación de sustancias sobre sus paredes.
 
 ## Glosario de términos
 
-<!-- - Aterosclerosis (https://www.mayoclinic.org/es-es/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569)
-- Isquemia
-- Angina
-- Ataque cardíaco asintomático (https://www.mayoclinic.org/es-es/diseases-conditions/heart-attack/expert-answers/silent-heart-attack/faq-20057777)
+- **Aterosclerosis:** acumulación de sustancias sobre las paredes de las arterias pudiendo dificultar el flujo sanguíneo. (Fuente: [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569))
+
+- **Isquemia miocárdica:** reducción del riego sanguíneo al corazón. Esto implica una reducción del aporte de oxígeno, por lo que a las células les cuesta realizar la respiración celular. Lo que implica que las células no pueden obtener la energía suficiente para realizar sus funciones de manera normal. (Fuentes: [Wikipedia](https://en.wikipedia.org/wiki/Ischemia), [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/myocardial-ischemia/symptoms-causes/syc-20375417))
+
+- **Angina:** molestia en el pecho debido a una isquemia miocárdica (Fuentes: [United Kingdom National Health Service](https://www.nhs.uk/conditions/angina/), [Video de Alberto Sanagustín](https://www.youtube.com/watch?v=3UhItS50mRI))
+
+- **Angina estable:** angina que se da en situaciones que demanden oxígeno (por ejemplo durante el ejercicio o en situaciones de estrés) y se calma en reposo
+
+- **Angina inestable:** angina que además de poderse dar durante un esfuerzo también puede darse estando en reposo
+
+<!-- 
 - Infarto
-- Prueba de esfuerzo nuclear (https://www.mayoclinic.org/es-es/tests-procedures/nuclear-stress-test/about/pac-20385231) -->
+
+- Trombosis
+
+- Prueba de esfuerzo nuclear (https://www.mayoclinic.org/es-es/tests-procedures/nuclear-stress-test/about/pac-20385231) 
+
+- Arritmia -->
+
+- **Enfermedad Asintomática**: una enfermedad se considera asintomática si un paciente advierte muy pocos síntomas o ninguno. (Fuentes: [definicion.de](https://definicion.de/asintomatico/), [MayoClinic](https://www.mayoclinic.org/es-es/diseases-conditions/heart-attack/expert-answers/silent-heart-attack/faq-20057777))
 
 ## Conjunto de datos
 
@@ -61,7 +81,7 @@ El conjunto de datos ha sido tomado de Kaggle ([Heart Disease UCI](https://www.k
     - Valor 0: padece enfermedad
     - Valor 1: no padece enfermedad
 
-### Problemas
+### Problemas con el conjunto de datos
 
 <!-- Registros con ca=4, registros con valores nulos imputados -->
 
@@ -88,3 +108,8 @@ Donante:
 
 4. "Heart Disease". Mayo Clinic. Visto por última vez el 05/11/2019. Link: [https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 
+5. "Coronary artery disease". Mayo Clinic. Visto por última vez el 17/11/2019. Link: [https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613](https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613)
+
+6. "Heart Attack (Myocardial Infarction)". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction](https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction)
+
+6. "Coronary Artery Disease". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease](https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease)
