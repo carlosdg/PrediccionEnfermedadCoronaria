@@ -46,41 +46,41 @@ El conjunto de datos ha sido tomado de Kaggle ([Heart Disease UCI](https://www.k
 
 (Work in progress)
 
-1. **age**: edad del paciente en años
-2. **sex**: sexo del paciente
+- **age**: edad del paciente en años
+- **sex**: sexo del paciente
     - Valor 0: mujer
     - Valor 1: hombre
-3. **cp**: tipo de dolor en el pecho
+- **cp**: tipo de dolor en el pecho
     - Valor 0: [asintomático](https://www.mayoclinic.org/es-es/diseases-conditions/heart-attack/expert-answers/silent-heart-attack/faq-20057777) (no presenta síntomas o muy pocos)
     - Valor 1: atypical angina (probable)
     - Valor 2: non-anginal pain
     - Valor 3: typical angina (definite)
-7. **trestbps**: presión sanguínea en reposo en milímetros de mercurio (mm Hg) en el momento de ser ingresado en el hospital
-8. **chol**: colesterol en mg/dl
-9. **fbs**: Si nivel de azúcar en sangre en ayunas es mayor a 120 mg/dl o no
+- **trestbps**: presión sanguínea en reposo en milímetros de mercurio (mm Hg) en el momento de ser ingresado en el hospital
+- **chol**: colesterol en mg/dl
+- **fbs**: Si nivel de azúcar en sangre en ayunas es mayor a 120 mg/dl o no
     - Valor 0: no
     - Valor 1: sí
-4. **restecg**: resting electrocardiographic results
+- **restecg**: resting electrocardiographic results
     - Valor 0: showing probable or definite left ventricular hypertrophy by Estes' criteria
     - Valor 1: normal
     - Valor 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
-10. **thalach**: frecuencia cardíaca máxima alcanzada durante una prueba de esfuerzo nuclear
-11. **exang**: si haciendo ejercicio el paciente tuvo angina o no
+- **thalach**: frecuencia cardíaca máxima alcanzada durante una prueba de esfuerzo nuclear
+- **exang**: si haciendo ejercicio el paciente tuvo angina o no
     - Valor 0: no
     - Valor 1: sí
-12. **oldpeak**: ST depression induced by exercise relative to rest
+- **oldpeak**: ST depression induced by exercise relative to rest
     - Valor 0: no
     - Valor 1: yes
-5. **slope**: the slope of the peak exercise ST segment
+- **slope**: the slope of the peak exercise ST segment
     - Valor 0: downsloping
     - Valor 1: flat
     - Valor 2: upsloping
-13. **ca**: number of major vessels (0-3) colored by flourosopy
-6. **thal**: resultados del flujo sanguíneo medido con un tinte radioactivo durante una [prueba de esfuerzo nuclear](https://www.mayoclinic.org/es-es/tests-procedures/nuclear-stress-test/about/pac-20385231)
+- **ca**: number of major vessels (0-3) colored by flourosopy
+- **thal**: resultados del flujo sanguíneo medido con un tinte radioactivo durante una [prueba de esfuerzo nuclear](https://www.mayoclinic.org/es-es/tests-procedures/nuclear-stress-test/about/pac-20385231)
     - Valor 1: defecto fijo (no se observa flujo sanguíneo en alguna parte del corazón)
     - Valor 2: flujo sanguíneo normal
     - Valor 7: defecto reversible (se observa flujo sanguíneo pero no es normal)
-14. **target**: variable objetivo
+- **target**: variable objetivo
     - Valor 0: padece enfermedad
     - Valor 1: no padece enfermedad
 
@@ -92,10 +92,10 @@ El conjunto de datos ha sido tomado de Kaggle ([Heart Disease UCI](https://www.k
 
 Creadores:
 
-1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
-2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
-3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
-4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
+- Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
+- University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+- University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+- V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano, M.D., Ph.D.
 
 Donante:
 
@@ -103,18 +103,18 @@ Donante:
 
 ## Bibliografía:
 
-1. "Heart disease and heart attacks". Khan Academy. Visto por última vez el 30/10/2019. Link: [https://www.khanacademy.org/science/health-and-medicine/healthcare-misc/v/heart-disease-and-heart-attacks](https://www.khanacademy.org/science/health-and-medicine/healthcare-misc/v/heart-disease-and-heart-attacks)
+- "Heart disease and heart attacks". Khan Academy. Visto por última vez el 30/10/2019. Link: [https://www.khanacademy.org/science/health-and-medicine/healthcare-misc/v/heart-disease-and-heart-attacks](https://www.khanacademy.org/science/health-and-medicine/healthcare-misc/v/heart-disease-and-heart-attacks)
 
-2. "Cellular respiration introduction". Khan Academy. Visto por última vez el 30/10/2019. Link: [https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration](https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration)
+- "Cellular respiration introduction". Khan Academy. Visto por última vez el 30/10/2019. Link: [https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration](https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration)
 
-3. "Enfermedades cardiovasculares". Organización Mundial de la Salud. Visto por última vez el 30/10/2019. Link: [https://www.who.int/es/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)](https://www.who.int/es/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+- "Enfermedades cardiovasculares". Organización Mundial de la Salud. Visto por última vez el 30/10/2019. Link: [https://www.who.int/es/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)](https://www.who.int/es/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
 
-4. "Heart Disease". Mayo Clinic. Visto por última vez el 05/11/2019. Link: [https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
+- "Heart Disease". Mayo Clinic. Visto por última vez el 05/11/2019. Link: [https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118](https://www.mayoclinic.org/diseases-conditions/heart-disease/symptoms-causes/syc-20353118)
 
-5. "Coronary artery disease". Mayo Clinic. Visto por última vez el 17/11/2019. Link: [https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613](https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613)
+- "Coronary artery disease". Mayo Clinic. Visto por última vez el 17/11/2019. Link: [https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613](https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613)
 
-6. "Heart Attack (Myocardial Infarction)". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction](https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction)
+- "Heart Attack (Myocardial Infarction)". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction](https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction)
 
-6. "Coronary Artery Disease". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease](https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease)
+- "Coronary Artery Disease". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease](https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease)
 
-7. Institute of Medicine (US) Committee on Social Security Cardiovascular Disability Criteria. Cardiovascular Disability: Updating the Social Security Listings. Washington (DC): National Academies Press (US); 2010. 7, Ischemic Heart Disease. Available from: https://www.ncbi.nlm.nih.gov/books/NBK209964/
+- Institute of Medicine (US) Committee on Social Security Cardiovascular Disability Criteria. Cardiovascular Disability: Updating the Social Security Listings. Washington (DC): National Academies Press (US); 2010. 7, Ischemic Heart Disease. Available from: https://www.ncbi.nlm.nih.gov/books/NBK209964/
