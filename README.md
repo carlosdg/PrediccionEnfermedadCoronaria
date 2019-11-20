@@ -10,28 +10,31 @@
 
 El corazón es el órgano encargado de bombear la sangre al resto del cuerpo. Recibe sangre con poco oxígeno que manda a los pulmones para que se oxigene y la sangre que recibe de los pulmones la bombea al resto del cuerpo. El corazón también es un músculo por lo que necesita oxígeno para continuar realizando su función, el cual llega por las arterias coronarias.
 
-Cuando se da una enfermedad cardiovascular suele hablarse de enfermedad de las arterias coronarias, es decir, dificultad del flujo sanguíneo en estas arterias, normalmente debido a la acumulación de sustancias sobre sus paredes.
+Cuando se da una enfermedad cardiovascular suele hablarse de una enfermedad de las arterias coronarias, es decir, dificultad del flujo sanguíneo en estas arterias (isquemia), normalmente debido a la acumulación de sustancias sobre sus paredes (aterosclerosis).
 
 ## Glosario de términos
 
-- **Aterosclerosis:** acumulación de sustancias sobre las paredes de las arterias pudiendo dificultar el flujo sanguíneo. (Fuente: [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569))
+- **Aterosclerosis:** acumulación de sustancias sobre las paredes de las arterias pudiendo dificultar el flujo sanguíneo. Además, la ruptura de esta placa de sustancias puede causar la formación de un coágulo de sangre (trombo) que, a su vez, puede bloquear aún más la zona afectada o dirigirse a otras partes del cuerpo y bloquear otras zonas (émbolo) (Fuentes: [American Heart Association](https://www.heart.org/en/health-topics/cholesterol/about-cholesterol/atherosclerosis), [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569))
 
-- **Isquemia miocárdica:** reducción del riego sanguíneo al corazón. Esto implica una reducción del aporte de oxígeno, por lo que a las células les cuesta realizar la respiración celular. Lo que implica que las células no pueden obtener la energía suficiente para realizar sus funciones de manera normal. (Fuentes: [Wikipedia](https://en.wikipedia.org/wiki/Ischemia), [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/myocardial-ischemia/symptoms-causes/syc-20375417))
+- **Isquemia:** reducción del flujo sanguíneo en un órgano (como el corazón). Esto implica una reducción del aporte de oxígeno y nutrientes, por lo que las células no pueden obtener la energía suficiente para realizar sus funciones de manera normal. (Fuentes: [American Heart Association](https://www.heart.org/en/health-topics/heart-attack/about-heart-attacks/silent-ischemia-and-ischemic-heart-disease), [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/myocardial-ischemia/symptoms-causes/syc-20375417), [Wikipedia](https://en.wikipedia.org/wiki/Ischemia))
 
-- **Angina:** molestia en el pecho debido a una isquemia miocárdica (Fuentes: [United Kingdom National Health Service](https://www.nhs.uk/conditions/angina/), [Video de Alberto Sanagustín](https://www.youtube.com/watch?v=3UhItS50mRI))
+- **Angina:** molestia en el pecho debido a una isquemia en las arterias coronarias. (Fuentes: [United Kingdom National Health Service](https://www.nhs.uk/conditions/angina/), [Video de Alberto Sanagustín](https://www.youtube.com/watch?v=3UhItS50mRI))
 
 - **Angina estable:** angina que se da en situaciones que demanden oxígeno (por ejemplo durante el ejercicio o en situaciones de estrés) y se calma en reposo
 
 - **Angina inestable:** angina que además de poderse dar durante un esfuerzo también puede darse estando en reposo
 
-<!-- 
-- Infarto
+- **Trombo:** es un coágulo de sangre, es decir, masa de sangre en estado sólido que obstruye el paso de la sangre en un vaso sanguíneo. (Fuente: [MedlinePlus](https://medlineplus.gov/spanish/ency/article/001124.htm))
 
-- Trombosis
+- **Émbolo:** trombo que se desprende y se dirigirse a otras partes del cuerpo. (Fuente: [MedlinePlus](https://medlineplus.gov/spanish/ency/article/001124.htm))
+
+- **Infarto agudo de miocardio:** también conocido como ataque cardíaco, es la muerte de parte del músculo del corazón debido a una isquemia. Es decir, la muerte de parte de las células del músculo por falta de oxígeno y nutrientes. (Fuentes: [Healthline](https://www.healthline.com/health/acute-myocardial-infarction#causes), [Wikipedia](https://en.wikipedia.org/wiki/Infarction))
+
+<!-- 
 
 - Prueba de esfuerzo nuclear (https://www.mayoclinic.org/es-es/tests-procedures/nuclear-stress-test/about/pac-20385231) 
 
-- Arritmia -->
+-->
 
 - **Enfermedad Asintomática**: una enfermedad se considera asintomática si un paciente advierte muy pocos síntomas o ninguno. (Fuentes: [definicion.de](https://definicion.de/asintomatico/), [MayoClinic](https://www.mayoclinic.org/es-es/diseases-conditions/heart-attack/expert-answers/silent-heart-attack/faq-20057777))
 
@@ -113,3 +116,5 @@ Donante:
 6. "Heart Attack (Myocardial Infarction)". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction](https://my.clevelandclinic.org/health/diseases/16818-heart-attack-myocardial-infarction)
 
 6. "Coronary Artery Disease". Cleveland Clinic. Visto por última vez el 17/11/2019. Link: [https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease](https://my.clevelandclinic.org/health/diseases/16898-coronary-artery-disease)
+
+7. Institute of Medicine (US) Committee on Social Security Cardiovascular Disability Criteria. Cardiovascular Disability: Updating the Social Security Listings. Washington (DC): National Academies Press (US); 2010. 7, Ischemic Heart Disease. Available from: https://www.ncbi.nlm.nih.gov/books/NBK209964/
