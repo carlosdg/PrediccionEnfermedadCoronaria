@@ -1,8 +1,8 @@
 # Predicción de la presencia de una enfermedad coronaria usando Machine Learning
 
-<figure align="center">
-    <img src="doc_resources/images/HeartImage__GordonJohnson__Pixabay.png" alt="Imagen de un corazón y un electrocardiograma de dos latidos normales" width=320 style="margin:10px">
-</figure>
+<p align="center">
+    <img src="doc_resources/images/HeartImage__GordonJohnson__Pixabay.png" alt="Imagen de un corazón y un electrocardiograma de dos latidos normales" />
+</p>
 
 
 ## Introducción
@@ -22,12 +22,12 @@ La sangre es vital para el correcto funcionamiento del cuerpo. Entre sus funcion
 
 La sangre es transportada por todo el cuerpo gracias a que es bombeada por el corazón. Este recibe sangre con poco oxígeno que manda a los pulmones para que se oxigene y la sangre que recibe de los pulmones la bombea al resto del cuerpo.
 
-<figure align="center">
-  <img src="doc_resources/images/Latidos.gif" alt="Flujo de la sangre a través de las cámaras del corazón">
-  <figcaption align="left">Flujo de la sangre a través de las cavidades del corazón. Las flechas azules representan la sangre sin oxigenar que se recibe del resto del cuerpo y se manda a los pulmones. Las flechas rojas representan la sangre proveniente de los pulmones que se manda al resto del cuerpo
-  
-  By josiño - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9396374</figcaption>
-</figure>
+<p align="center">
+  <img src="doc_resources/images/Latidos.gif" alt="Flujo de la sangre a través de las cámaras del corazón" />
+  <p align="center">Flujo de la sangre a través de las cavidades del corazón. Las flechas azules representan la sangre sin oxigenar que se recibe del resto del cuerpo y se manda a los pulmones. Las flechas rojas representan la sangre proveniente de los pulmones que se manda al resto del cuerpo</p>
+      
+  <p align="center">By josiño - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9396374</p>
+</p>
 
 Un aporte inadecuado de sangre puede llevar a que las células no obtengan suficiente energía para realizar sus funciones, provocando su muerte en el peor caso.
 
@@ -36,12 +36,12 @@ Un aporte inadecuado de sangre puede llevar a que las células no obtengan sufic
 
 El corazón también necesita oxígeno y nutrientes para continuar realizando su función, estos llegan por unas arterias conocidas como arterias coronarias. Cuando se da una enfermedad coronaria se habla de una dificultad del flujo sanguíneo en estas arterias debido a la acumulación de sustancias sobre sus paredes.
 
-<figure align="center">
+<p align="center">
   <img src="doc_resources/images/Heart_attack-NIH.gif" alt="Muerte de células del corazón por una isquemia en las arterias coronarias">
-  <figcaption align="left">Muerte de células del corazón por una isquemia en las arterias coronarias.
+  <p align="center">Muerte de células del corazón por una isquemia en las arterias coronarias.</p>
   
-  By NIH: National Heart, Lung and Blood Institute - http://www.nhlbi.nih.gov/health/health-topics/topics/heartattack/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=25287085</figcaption>
-</figure>
+  <p align="center">By NIH: National Heart, Lung and Blood Institute - http://www.nhlbi.nih.gov/health/health-topics/topics/heartattack/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=25287085</p>
+</p>
 
 En el peor caso, el efecto de privar a las células del corazón de nutrientes y oxígeno da lugar a un infarto, es decir, la muerte de parte de las células del corazón. Lo cuál, a su vez, tiene repercusión en el resto del cuerpo pues el bombeo de sangre se ve afectado al debilitarse el corazón.
 
