@@ -96,7 +96,7 @@ El conjunto de datos ha sido tomado de Kaggle ([Heart Disease UCI](https://www.k
 - **fbs**: Si nivel de azúcar en sangre en ayunas es mayor a 120 mg/dl o no
     - Valor 0: no
     - Valor 1: sí
-- **restecg**: resultado del electrocardiograma en reposo
+- **restecg:** resultado del electrocardiograma en reposo
     - Valor 0: posible hipertrofia en el ventrículo izquierdo
     - Valor 1: normal
     - Valor 2: se ven anormalidades en la onda T o segmento ST
@@ -104,18 +104,17 @@ El conjunto de datos ha sido tomado de Kaggle ([Heart Disease UCI](https://www.k
 - **exang**: si haciendo ejercicio el paciente tuvo angina o no
     - Valor 0: no
     - Valor 1: sí
-- **oldpeak**: depresión del segmento ST al hacer ejercicio
-    - Valor 0: no
-    - Valor 1: sí
+- **oldpeak**: relación de la depresión del segmento ST al hacer ejercicio con respecto en estado de reposo
 - **slope**: pendiente del segmento ST durante la parte más exigente del ejercicio
     - Valor 0: descendente
     - Valor 1: plano
     - Valor 2: ascendente
 - **thal**: resultados del flujo sanguíneo medido con el tinte radioactivo
+    - Valor 0: NULL
     - Valor 1: defecto fijo (no se observa flujo sanguíneo en alguna parte del corazón)
     - Valor 2: flujo sanguíneo normal
-    - Valor 7: defecto reversible (se observa flujo sanguíneo pero no es normal)
-- **ca**: número de vasos sanguíneos principales coloreados por el tinte radioactivo. El número varía de 0 a 3.
+    - Valor 3: defecto reversible (se observa flujo sanguíneo pero no es normal)
+- **ca**: número de vasos sanguíneos principales coloreados por el tinte radioactivo. El número varía de 0 a 4 aunque el valor 4 representa un valor nulo. 
 - **target**: variable objetivo
     - Valor 0: padece enfermedad
     - Valor 1: no padece enfermedad
