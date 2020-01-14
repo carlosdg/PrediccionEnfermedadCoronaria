@@ -7,6 +7,6 @@ services:
       - "8787:8787"
     volumes:
       - ./project:/home/rstudio/project
-      - ./doc_resources:/home/rstudio/doc_resources
+      - ./docs:/home/rstudio/doc_resources
     environment:
       - DISABLE_AUTH=true
