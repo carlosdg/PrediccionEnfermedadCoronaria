@@ -4,6 +4,14 @@ output:
   html_document:
     code_folding: hide
     df_print: paged
+    highlight: tango
+    number_sections: yes
+    theme: united
+    toc: yes
+    toc_depth: 3
+  word_document:
+    toc: yes
+    toc_depth: '3'
   pdf_document: default
 ---
 
@@ -30,13 +38,16 @@ output:
   .with-margin-top {
     margin-top: 5rem;
   }
+  .with-margin-bottom {
+    margin-bottom: 5rem;
+  }
 </style>
 
-<p align="center" class="figure">
+# Introducción
+
+<p align="center" class="figure with-margin-bottom">
     <img src="../../doc_resources/images/HeartImage__GordonJohnson__Pixabay.png" alt="Imagen de un corazón y un electrocardiograma de dos latidos normales" />
 </p>
-
-## Introducción
 
 Según el *National Heart, Lung, and Blood Institute*, [la enfermedad coronaria es una de las principales causas de muerte en los Estados Unidos](https://www.nhlbi.nih.gov/health-topics/espanol/enfermedad-coronaria). Y esto ocurre aún pudiendo controlar muchos de los factores de riesgo para prevenir la enfermedad.
 
@@ -45,9 +56,9 @@ Además, según la Organización Mundial de la Salud, [las enfermedades cardiova
 Debido a la frecuencia de esta enfermedad, en este trabajo se intenta crear un modelo para predecir si un paciente padece esta enfermedad a partir de unas serie de variables medidas como la frecuencia cardíaca o el nivel de colesterol en sangre.
 
 
-## Contexto 
+# Contexto 
 
-### Sangre y corazón
+## Sangre y corazón
 
 La sangre es vital para el correcto funcionamiento del cuerpo. Entre sus funciones se encuentra el transporte de oxígeno y nutrientes a las células además de la retirada de las sustancias de desecho de las mismas.
 
@@ -62,7 +73,7 @@ La sangre es transportada por todo el cuerpo gracias a que es bombeada por el co
 Un aporte inadecuado de sangre puede llevar a que las células no obtengan suficiente energía para realizar sus funciones, provocando su muerte en el peor caso.
 
 
-### Enfermedad coronaria
+## Enfermedad coronaria
 
 El corazón también necesita oxígeno y nutrientes para continuar realizando su función, estos llegan por unas arterias conocidas como arterias coronarias. Cuando se da una enfermedad coronaria se habla de una dificultad del flujo sanguíneo en estas arterias debido a la acumulación de sustancias sobre sus paredes.
 
@@ -75,7 +86,7 @@ El corazón también necesita oxígeno y nutrientes para continuar realizando su
 En el peor caso, el efecto de privar a las células del corazón de nutrientes y oxígeno da lugar a un infarto, es decir, la muerte de parte de las células del corazón. Lo cuál, a su vez, tiene repercusión en el resto del cuerpo pues el bombeo de sangre se ve afectado al debilitarse el corazón.
 
 
-### Glosario de términos
+## Glosario de términos
 
 - **Aterosclerosis:** acumulación de sustancias sobre las paredes de las arterias pudiendo dificultar el flujo sanguíneo. Además, la ruptura de esta placa de sustancias puede causar la formación de un coágulo de sangre (trombo) que, a su vez, puede bloquear aún más la zona afectada o dirigirse a otras partes del cuerpo y bloquear otras zonas (émbolo) (Fuentes: [American Heart Association](https://www.heart.org/en/health-topics/cholesterol/about-cholesterol/atherosclerosis), [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569))
 
@@ -104,12 +115,12 @@ En el peor caso, el efecto de privar a las células del corazón de nutrientes y
 - **Hipertrofia del ventrículo izquierdo:** engrosamiento de las paredes de la cavidad del corazón que impulsa la sangre al resto del cuerpo. Esto puede hacer que el músculo pierda elasticidad y el corazón deje de funcionar adecuadamente. (Fuente: [Mayo Clinic](https://www.mayoclinic.org/es-es/diseases-conditions/left-ventricular-hypertrophy/symptoms-causes/syc-20374314))
 
 
-## Conjunto de datos
+# Conjunto de datos
 
 El conjunto de datos ha sido tomado de Kaggle ([Heart Disease UCI](https://www.kaggle.com/ronitf/heart-disease-uci)), que a su vez ha sido tomado de [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Heart+Disease). Se tienen datos de alrededor de 300 pacientes de Cleveland y las variables que se recogen están descritas en una sección siguiente.
 
 
-### Problemas con el conjunto de datos
+## Problemas con el conjunto de datos
 
 Gracias al [*post* del usuario *InitPic*](https://www.kaggle.com/ronitf/heart-disease-uci/discussion/105877) se ha podido advertir que el conjunto de datos en Kaggle es distinto al de *UCI Machine Learning Repository* pero la descripción de los datos es la misma. Así que la descripción de los datos en la siguiente sección se ha hecho ajustándose a los datos que tenemos.
 
@@ -124,7 +135,7 @@ Parte de este cambio con respecto a los datos originales es que los valores nulo
 Como son pocos registros, en este trabajo se ha optado por descartarlos del conjunto.
 
 
-### Variables de los datos
+## Variables de los datos
 
 ```{r message=FALSE, warning=FALSE}
 # Libraries
@@ -167,7 +178,7 @@ levels(data$thal) <- c("Defecto fijo", "Flujo normal", "Defecto reversible")
 levels(data$target) <- c("Padece", "No_padece")
 ```
 
-#### target
+### target
 
 Variable objetivo: indica si el paciente padece una enfermedad coronaria o no.
 
@@ -183,7 +194,7 @@ ggplot(data, aes(data$target, fill=data$target)) +
   guides(fill=FALSE)
 ```
 
-#### age
+### age
 
 Edad del paciente en años. En los datos se refleja, como cabe esperar, que la edad es un factor de riesgo, es decir, a mayor edad más probabilidad de padecer esta enfermedad.
 
@@ -193,7 +204,7 @@ ggplot(data, aes(data$age, fill=data$target)) +
   labs(fill="Enfermedad", x="Edad", y="Número de pacientes")
 ```
 
-#### sex
+### sex
 
 Sexo del paciente
 
@@ -208,7 +219,7 @@ ggplot(data, aes(data$sex, fill=data$target)) +
   labs(fill="Enfermedad", x="Sexo", y="Edad")
 ```
 
-#### cp
+### cp
 
 Tipo de dolor en el pecho
 
@@ -226,7 +237,7 @@ ggplot(data, aes(data$cp, fill=data$target)) +
 ```
 
 
-#### trestbps
+### trestbps
 
 Presión sanguínea en reposo en milímetros de mercurio (mm Hg) en el momento de ser ingresado en el hospital.
 
@@ -238,7 +249,7 @@ ggplot(data, aes(data$trestbps, fill=data$target)) +
   labs(fill="Enfermedad", x="Presión sanguínea (mm Hg)", y="Número de pacientes")
 ```
 
-#### chol
+### chol
 
 Colesterol en mg/dl. Una variable que las personas podemos controlar, se puede ver que a mayor colesterol mayor índice de aparición de la enfermedad. Resulta curioso que los casos más extremos de colesterol no padezcan la enfermedad, esto puede deberse a otras variables que no podemos ver en este sencillo histograma. O puede ser por variables no observadas, por ejemplo, puede ser que estos pacientes realmente no estuvieran en ayunas a la hora de tomar las muestras de sangre.
 
@@ -249,7 +260,7 @@ ggplot(data, aes(data$chol, fill=data$target)) +
 ```
 
 
-#### fbs
+### fbs
 
 Si el nivel de azúcar en sangre en ayunas es mayor a 120 mg/dl o no. Esta es otra variable que se puede controlar. Sin embargo, por sí sola no parece ser muy útil para determinar si un paciente presenta una enfermedad o no. Aunque a priori no podemos descartarla puede que junto con otras variables sí ayude a determinar mejor si un paciente padece o no una enfermedad.
 
@@ -264,7 +275,7 @@ ggplot(data, aes(data$fbs, fill=data$target)) +
 
 A partir de aquí las variables están relacionadas con una prueba de esfuerzo nuclear. Es decir, una prueba de esfuerzo donde además se inyecta un tinte radiactivo al paciente para ver gráficamente su flujo sanguíneo.
 
-#### restecg
+### restecg
 
 Resultado del electrocardiograma en reposo.
 
@@ -282,7 +293,7 @@ ggplot(data, aes(data$restecg, fill=data$target)) +
   labs(fill="Enfermedad", x="Electrocardiograma en reposo", y="Número de pacientes")
 ```
 
-#### thalach
+### thalach
 
 Frecuencia cardíaca máxima alcanzada durante la prueba de esfuerzo.
 
@@ -308,7 +319,7 @@ data[data$thalach > 180, c("age", "thalach", "target")]
 ```
 
 
-#### exang
+### exang
 
 Si haciendo ejercicio el paciente tuvo angina o no
 
@@ -323,7 +334,7 @@ ggplot(data, aes(data$exang, fill=data$target)) +
   labs(fill="Enfermedad", x="Presencia de angina durante el ejercicio", y="Número de pacientes")
 ```
 
-#### oldpeak
+### oldpeak
 
 Descenso del segmento ST al hacer ejercicio en relación con el mismo en reposo.
 
@@ -336,7 +347,7 @@ ggplot(data, aes(data$oldpeak, fill=data$target)) +
 ```
 
 
-#### slope
+### slope
 
 Pendiente del segmento ST durante la parte más exigente del ejercicio
 
@@ -359,7 +370,7 @@ ggplot(data, aes(x=data$slope, y=data$oldpeak, fill=data$target)) +
 ```
 
 
-#### thal
+### thal
 
 Resultados del flujo sanguíneo medido con el tinte radioactivo
 
@@ -377,7 +388,7 @@ ggplot(data, aes(data$thal, fill=data$target)) +
 ```
 
 
-#### ca
+### ca
 
 Número de vasos sanguíneos principales coloreados por el tinte radioactivo. El número varía de 0 a 4 aunque el valor 4 representa un valor nulo, los cuales se han quitado del conjunto de datos en una celda anterior.
 
@@ -390,7 +401,7 @@ ggplot(data, aes(data$ca, fill=data$target)) +
 ```
 
 
-## Modelos
+# Modelos
 
 Para esta parte he elegido cuatro modelos. Tres modelos son sencillos: regresión logística por ser uno de los modelos con más historia, naive bayes para ver hasta dónde se puede llegar con la asunción de que las variables sean independientes y árboles de decisión para compararlo con el cuarto modelo. El último modelo es random forest para comparar las métricas de los otros modelos con uno que no es tan fácil de interpretar.
 
@@ -414,7 +425,7 @@ El conjunto de testeo imita a datos nuevos en el mundo real, sólo se usará al 
 
 El conjunto de entrenamiento se usará para evaluar los modelos mediante validación cruzada de 10 pliegues. Por simplicidad dejaremos la elección de los hiperparámetros por defecto, esto significa que se elegirán unos valores aleatorios y se entrenarán los clasificadores mediante validación cruzada por cada combinación.
 
-### Regresión logística
+## Regresión logística
 
 ```{r}
 set.seed(8)
@@ -426,7 +437,10 @@ model.lr <- train(target ~ .,
 model.lr
 ```
 
-### Árbol de decisión
+Parece que esta implementación de regresión logística no tiene hiperparámetros que se puedan especificar. Sin embargo, ya vemos unos resultados de validación cruzada bastante interesantes. La precisión es bastante buena y un índice Kappa de casi 0.7 lo cuál suele considerarse bastante bueno también.
+
+
+## Árbol de decisión
 
 ```{r}
 set.seed(8)
@@ -437,14 +451,23 @@ model.tree <- train(target ~ .,
 model.tree
 ```
 
-```{r,fig.align='center',fig.height=4}
-rpart.plot(model.tree$finalModel)
-```
+Para el árbol de decisión se ha probado con 3 hiperparámetros. `cp` es un hiperparámetro de `rpart` que gobierna la complejidad del modelo: menores valores dan árboles más complejos. Podemos ver que con los menores valores del hiperparámetro salen mejores árboles, seguramente porque con los `cp` mayores los árboles resultan muy pequeños.
+
 ```{r,fig.align='center',fig.height=4}
 plot(model.tree)
 ```
 
-### Naive bayes
+Las métricas son aceptables y además, el árbol resultante es bastante pequeño y fácil de interpretar como se ve a continuación.
+
+Vemos que la frecuencia cardíaca en el ejercicio es la variable principal, sólo con esto (e implícitamente la edad) se puede decidir que una persona no padezca una enfermedad coronaria, acertando en el 76% de los casos. Si además se incluye el número de vasos sanguíneos coloreados por el tinte, se puede ver que es muy probable que una persona con una frecuencia cardíaca alta durante el ejercicio y sin vasos sanguíneos coloreados no padezca una enfermedad coronaria.
+
+Una mejor estrategia de elección de hiperparámetros sería una vía sencilla para intentar obtener resultados mejores, siempre teniendo en cuenta el riesgo del sobreajuste, claro.
+
+```{r,fig.align='center',fig.height=4}
+rpart.plot(model.tree$finalModel)
+```
+
+## Naive bayes
 
 ```{r}
 set.seed(8)
@@ -459,8 +482,10 @@ model.nb
 plot(model.nb)
 ```
 
+Parece que se pueden obtener resultados bastante aceptables asumiendo que las variables son totalmente independientes entre sí. Tampoco es de sorprender pues este modelo es conocido por dar también resultados aceptables en la clasificación de mensajes de SPAM.
 
-### Random Forest
+
+## Random Forest
 
 ```{r}
 set.seed(8)
@@ -475,33 +500,57 @@ model.rf
 plot(model.rf)
 ```
 
+Curiosamente este modelo sigue siendo considerablemente peor que regresión logística. Puede que con una mejor estrategia para elegir los valores de los hiperparámetros esto hubiése sido distinto.
 
-## Resultados
+# Resultados
 
-### Resumen del entrenamiento
+## Resumen del entrenamiento
+
+En las tablas siguientes se puede ver un resumen de los resultados de los 10 pliegues de validación cruzada.
 
 ```{r}
-model.all <- list(LogReg=model.lr, DecTree=model.tree, NB=model.nb, RF=model.rf)
+model.all <- list(RegLogistica=model.lr, Arbol=model.tree, NaiveBayes=model.nb, RandomForest=model.rf)
 results <- resamples(model.all)
 summary(results, metric=c("Kappa", "Accuracy"))
 ```
 
-### Resultados finales
+Regresión logística ha sido el mejor claramente teniendo en cuenta las métricas. Además, sus  métricas no varían mucho si vemos los cuartiles. 
+
+Por otro lado, el resto de modelos tienen métricas que varían más, lo que indica que pueden no ser tan fiables para tratar con datos nuevos. El árbol de decisión me sorprendió gratamente debido a su sencillez, pero parece ser el menos fiable, tal vez con una mejor elección de hiperparámetros resulte un modelo más robusto.
+
+Como resultados finales vamos a ver los de regresión logítica por ser el mejor modelo. Y también vamos a ver los del árbol para ver si en el conjunto de testeo varían mucho las métricas con respecto a la media de validación cruzada.
+
+## Resultados finales
+
+Primero se muestran los resultados de regresión logística
 
 ```{r}
 preds <- predict(model.lr, data.test)
 confusionMatrix(preds, data.test$target)
 ```
 
+Podemos ver que se mantienen más o menos las mismas métricas que con validación cruzada, lo cuál es bastante positivo. Y se tiene una matriz de confusión con la mayoría de las observaciones en la diagonal principal.
 
-## Conclusiones
+Por otra parte, los resultados en el árbol de decisión son mucho peores, como era de esperar son resultados bastante distintos a la media de validación cruzada.
 
-TODO: Feature engineering, etc
-
----
-
-
-
-
+```{r}
+preds.tree <- predict(model.tree, data.test)
+confusionMatrix(preds.tree, data.test$target)
+```
 
 
+# Conclusiones
+
+Se ha conseguido adquir unos conocimientos básicos acerca de un tema bastante alejado de la informática. Esta es una habilidad bastante importante en la ciencia de datos pues el conocimiento sobre el dominio específico que se está tratando nos permite entender lo que estamos haciendo y tomar mejores decisiones.
+
+En este proyecto, este conocimiento ha servido para entender las variables pues la descripción original era bastante limitada. Sin embargo, también se podría usar este conocimiento para crear nuevas variables que puedan mejorar el rendimiento de los clasificadores, por ejemplo, se podría discretizar la edad, intentar elimitar el factor de la edad en la frecuencia cardíaca, combinar la edad con la presión sanguínea, combinar el nivel de descenso del segmento ST con su pendiente, etc.
+
+Otra posible vía para mejorar los resultados sería mejorar la elección de los hiperparámetros de los modelos o elegir otros modelos.
+
+Hemos visto cómo el uso de validación cruzada no se debe centrar en ver sólo un estadístico como la media. Esto ha servido para determinar el mejor modelo y comprobar que un modelo que tiene resultados bastantes dispersos durante el entrenamiento no generaliza bien con datos nuevos.
+
+Finalmente, se ha obtenido un clasificador de la presencia de una enfermedad coronaria con unos resultados bastante aceptables.
+
+# Autor y repositorio
+
+El autor de este proyecto es Carlos Domínguez García y el código del proyecto, así como el resto de recursos usados se pueden encontrar en el [repositorio de Github del proyecto](https://github.com/carlosdg/PrediccionEnfermedadCoronaria).
